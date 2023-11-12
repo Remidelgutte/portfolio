@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Oswald:wght@300&display=swap");
-html {
+:root {
   background-color: #e4e4e4;
+  color: #000;
 }
+
 body {
   padding: 0 2%;
   margin: 0;
@@ -11,10 +13,10 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #e4e4e4;
   align-items: center;
   position: sticky;
   top: 0;
+  background-color: #e4e4e4;
 }
 nav .profile {
   display: flex;
@@ -60,10 +62,8 @@ nav ul li:hover {
 }
 .page-content header p {
   line-height: 30px;
-  color: #818181;
 }
 .page-content header button:hover {
-  color: rgb(120, 120, 120);
   border-bottom-color: #000;
 }
 .page-content .presentation-image {
@@ -97,25 +97,15 @@ nav ul li:hover {
 }
 .page-content .projets-section .projets .projet .dates {
   font-size: 15px;
-  color: rgb(120, 120, 120);
 }
 footer {
-  margin-top: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: #333;
-  color: white;
+  margin-top: 100px;
+  text-align: center;
 }
-footer .colonne p {
-  font-size: 13px;
-  color: rgb(188, 188, 188);
-  cursor: pointer;
+footer p {
+  font-size: 15px;
 }
-footer .colonne p:hover {
-  color: white;
-}
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 880px) {
   nav {
     justify-content: center;
   }
@@ -136,12 +126,5 @@ footer .colonne p:hover {
     margin-right: 0;
     margin-bottom: 20px;
     max-width: 100%;
-  }
-  footer {
-    justify-content: flex-start;
-  }
-  footer .colonne {
-    width: 80%;
-    margin-left: 2%;
   }
 }

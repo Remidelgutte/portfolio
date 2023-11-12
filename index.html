@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link name="stylesheet" rel="stylesheet" href="style.css" />
+    <link name="stylesheet" rel="stylesheet" href="/css/style.css" />
     <title>Portfolio Delgutte Rémi</title>
   </head>
   <body>
-    <nav>
+    <nav class="nav-global">
       <div class="profile">
         <img src="images/profile.jpg" alt="photo de profile" />
         <h1>Delgutte Rémi</h1>
       </div>
       <div>
         <ul>
-          <li class="nav"><a href="index.html">Accueil</a></li>
-          <li class="nav"><a href="projets.html">Mes projets</a></li>
-          <li class="nav"><a href="cv.html"> Curriculum Vitae</a></li>
-          <li class="nav"><a href="contact.html">Me contacter</a></li>
+          <li><a class="nav-right" href="index.html">Accueil</a></li>
+          <li><a class="nav-right" href="projets.html">Mes projets</a></li>
+          <li><a class="nav-right" href="cv.html"> Curriculum Vitae</a></li>
+          <li><a class="nav-right" href="contact.html">Me contacter</a></li>
+          <li id="dark-light-mode" onclick="changeDarkMode()">Dark mode</li>
         </ul>
       </div>
     </nav>
@@ -80,24 +81,9 @@
       </section>
     </section>
     <footer>
-      <div class="colonne">
-        <h3>Mes Services</h3>
-        <p>service 1</p>
-        <p>service 2</p>
-        <p>service 3</p>
-      </div>
-      <div class="colonne">
-        <h3>futur</h3>
-        <p>futur 1</p>
-        <p>futur 2</p>
-        <p>futur 3</p>
-      </div>
-      <div class="colonne">
-        <h3>Mes adresses</h3>
-        <p>delgutte.remi@hotmail.com</p>
-        <p>hhhhh</p>
-        <p>hhhhh</p>
-      </div>
+      <h3>Rémi Delgutte</h3>
+      <p>&COPY; Remi Delgutte 2023</p>
     </footer>
+    <script src="script/script.js"></script>
   </body>
 </html>
