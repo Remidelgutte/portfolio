@@ -59,7 +59,7 @@ nav ul li:hover {
   color: #818181;
 }
 .page-content header button:hover {
-  color: #ccc;
+  color: rgb(188, 188, 188);
   border-bottom-color: #000;
 }
 .page-content .presentation-image {
@@ -93,7 +93,7 @@ nav ul li:hover {
 }
 .page-content .projets-section .projets .projet .dates {
   font-size: 15px;
-  color: rgb(145, 145, 145);
+  color: rgb(188, 188, 188);
 }
 footer {
   margin-top: 5%;
@@ -105,7 +105,7 @@ footer {
 }
 footer .colonne p {
   font-size: 13px;
-  color: #ccc;
+  color: rgb(188, 188, 188);
   cursor: pointer;
 }
 footer .colonne p:hover {
