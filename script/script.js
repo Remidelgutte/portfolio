@@ -30,6 +30,4 @@ function changeDarkMode() {
       elements[i].style.setProperty("background-color", "#333");
     }
   }
-  document.cookie =
-    "user=DarkMode; path=/; domain=remidelgutte.me; max-age=31536000";
 }
