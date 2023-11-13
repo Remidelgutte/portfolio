@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Oswald:wght@300&display=swap");
-:root {
+html {
   background-color: #e4e4e4;
   color: #000;
 }
@@ -126,5 +126,14 @@ footer p {
     margin-right: 0;
     margin-bottom: 20px;
     max-width: 100%;
+  }
+  footer {
+    margin-top: 20px;
+  }
+  footer h3 {
+    font-size: 13px;
+  }
+  footer p {
+    font-size: 10px;
   }
 }
