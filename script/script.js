@@ -1,33 +1,21 @@
-let darkMode = false;
+// Check if dark mode preference is stored in local storage
+const isDarkMode = localStorage.getItem("darkMode") === "enabled";
 
-function changeDarkMode() {
-  if (darkMode) {
-    //light mode
-    darkMode = false;
-    document.documentElement.style.setProperty("color", "black");
-    document.documentElement.style.setProperty("background-color", "#e4e4e4");
-    document.getElementById("dark-light-mode").innerHTML = "Dark Mode";
-    var elements = document.getElementsByClassName("nav-right");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.setProperty("color", "black");
-    }
-    var elements = document.getElementsByClassName("nav-global");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.setProperty("background-color", "#e4e4e4");
-    }
-  } else {
-    //dark mode
-    darkMode = true;
-    document.documentElement.style.setProperty("color", "#e4e4e4");
-    document.documentElement.style.setProperty("background-color", "#333");
-    document.getElementById("dark-light-mode").innerHTML = "Light Mode";
-    var elements = document.getElementsByClassName("nav-right");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.setProperty("color", "#e4e4e4");
-    }
-    var elements = document.getElementsByClassName("nav-global");
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.setProperty("background-color", "#333");
-    }
-  }
+// Function to enable or disable dark mode
+function toggleDarkMode() {
+  const body = document.body;
+  const isDarkModeEnabled = body.classList.toggle("dark-mode");
+
+  // Store the user's preference in local storage
+  localStorage.setItem("darkMode", isDarkModeEnabled ? "enabled" : "disabled");
 }
+
+// Set initial dark mode based on user preference
+if (isDarkMode) {
+  document.body.classList.add("dark-mode");
+}
+
+// Attach event listener to the button for toggling dark mode
+document
+  .getElementById("DarkModeToggle")
+  .addEventListener("click", toggleDarkMode);

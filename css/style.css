@@ -1,13 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&family=Oswald:wght@300&display=swap");
-html {
-  background-color: #e4e4e4;
-  color: #000;
+:root {
+  --background-color: #e4e4e4;
+  --text-color: #333;
 }
-
 body {
   padding: 0 2%;
   margin: 0;
   font-family: "Noto Sans", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.5s;
+}
+.dark-mode {
+  --background-color: #333;
+  --text-color: #e4e4e4;
 }
 nav {
   display: flex;
@@ -16,8 +22,18 @@ nav {
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #e4e4e4;
+  background-color: var(--background-color);
+  transition: 0.5s;
 }
+nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  padding: 0 0;
+  font-size: 16px;
+}
+
 nav .profile {
   display: flex;
   align-items: center;
@@ -38,14 +54,15 @@ nav ul {
 nav li {
   margin-left: 20px;
   cursor: pointer;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px solid;
+  border-bottom-color: var(--background-color);
 }
 nav a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
 }
 nav ul li:hover {
-  border-bottom-color: #333;
+  border-bottom-color: var(--text-color);
 }
 .page-content {
   margin: 4%;
@@ -62,9 +79,6 @@ nav ul li:hover {
 }
 .page-content header p {
   line-height: 30px;
-}
-.page-content header button:hover {
-  border-bottom-color: #000;
 }
 .page-content .presentation-image {
   margin-top: 5%;
@@ -99,12 +113,17 @@ nav ul li:hover {
   font-size: 15px;
 }
 footer {
-  margin-top: 100px;
-  text-align: center;
+  margin: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+footer h3 {
+  text-align: left;
 }
 footer p {
-  font-size: 15px;
+  text-align: right;
 }
+
 @media screen and (max-width: 880px) {
   nav {
     justify-content: center;
@@ -129,11 +148,16 @@ footer p {
   }
   footer {
     margin-top: 20px;
+    max-width: 100%;
   }
   footer h3 {
     font-size: 13px;
+    margin: auto;
+    margin-left: 0;
   }
   footer p {
     font-size: 10px;
+    margin: auto;
+    margin-right: 15px;
   }
 }

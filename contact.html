@@ -7,6 +7,10 @@
     <title>Portfolio Delgutte Rémi</title>
   </head>
   <body>
+    <script>
+      const theme = localStorage.getItem("darkMode") || "light";
+      document.documentElement.dataset.theme = theme;
+    </script>
     <nav class="nav-global">
       <div class="profile">
         <img src="images/profile.jpg" alt="photo de profile" />
@@ -18,10 +22,10 @@
           <li><a class="nav-right" href="projets.html">Mes projets</a></li>
           <li><a class="nav-right" href="cv.html"> Curriculum Vitae</a></li>
           <li><a class="nav-right" href="contact.html">Me contacter</a></li>
-          <li id="dark-light-mode" onclick="changeDarkMode()">Dark mode</li>
+          <li><button id="DarkModeToggle">Mode sombre</button></li>
         </ul>
       </div>
     </nav>
+    <script src="script/script.js"></script>
   </body>
-  <script src="script/script.js"></script>
 </html>
