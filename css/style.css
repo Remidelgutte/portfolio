@@ -266,18 +266,10 @@ footer p {
     max-width: 100%;
   }
   footer {
-    margin-top: 20px;
+    display: flex;
+    align-items: flex-end;
     max-width: 100%;
-  }
-  footer h3 {
-    font-size: 13px;
-    margin: auto;
-    margin-left: 0;
-  }
-  footer p {
     font-size: 10px;
-    margin: auto;
-    margin-right: 15px;
   }
   .cv-container {
     max-width: 100%;
