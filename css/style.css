@@ -232,13 +232,8 @@ h2 .h2-cv {
 footer {
   margin: 4%;
   display: flex;
-  justify-content: space-between;
-}
-footer h3 {
-  text-align: left;
-}
-footer p {
-  text-align: right;
+  align-items: flex-end;
+  font-size: 10px;
 }
 @media screen and (max-width: 880px) {
   nav {
