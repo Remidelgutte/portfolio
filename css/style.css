@@ -85,8 +85,8 @@ nav ul li:hover {
 }
 .page-content .presentation-image {
   margin-top: 5%;
-  max-width: 1193px;
-  max-height: 691px;
+  width: 1193px;
+  height: 691px;
 }
 .page-content .presentation-image img {
   width: 100%;
@@ -250,8 +250,8 @@ footer p {
     display: none;
   }
   .page-content header {
-    margin-top: 10%;
-    max-width: 100%;
+    top: 10%;
+    width: 100%;
   }
   .page-content .presentation-image {
     max-width: 332px;
