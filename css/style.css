@@ -43,6 +43,8 @@ nav .profile img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  max-width: 270px;
+  max-height: 280px;
 }
 nav .profile h1 {
   margin-left: 10px;
@@ -248,6 +250,10 @@ footer p {
   .page-content header {
     margin-top: 10%;
     max-width: 100%;
+  }
+  .page-content .presentation-image {
+    max-width: 720px;
+    max-height: 417px;
   }
   .page-content .projets-section {
     margin-top: 15%;
