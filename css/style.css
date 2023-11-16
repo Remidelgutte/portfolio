@@ -252,8 +252,7 @@ footer p {
     max-width: 100%;
   }
   .page-content .presentation-image {
-    width: 332px;
-    height: 192px;
+    max-width: 100%;
   }
   .page-content .projets-section {
     margin-top: 15%;
