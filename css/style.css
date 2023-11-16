@@ -250,12 +250,12 @@ footer p {
     display: none;
   }
   .page-content header {
-    top: 10%;
-    width: 100%;
+    margin-top: 10%;
+    max-width: 100%;
   }
   .page-content .presentation-image {
-    max-width: 332px;
-    max-height: 192px;
+    width: 332px;
+    height: 192px;
   }
   .page-content .projets-section {
     margin-top: 15%;
