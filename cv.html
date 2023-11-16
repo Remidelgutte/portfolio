@@ -3,13 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link name="stylesheet" rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>Portfolio Delgutte Rémi</title>
+    <link name="stylesheet" rel="stylesheet" href="/css/style.css" />
   </head>
-  <body>
+  <body class="body-cv">
     <script>
-      const theme = localStorage.getItem("darkMode") || "light";
-      document.documentElement.dataset.theme = theme;
+      if (localStorage.getItem("darkMode") === "enabled")
+        document.body.classList.add("darkMode");
     </script>
     <nav class="nav-global">
       <div class="profile">
@@ -18,14 +26,168 @@
       </div>
       <div>
         <ul>
-          <li><a class="nav-right" href="index.html">Accueil</a></li>
-          <li><a class="nav-right" href="projets.html">Mes projets</a></li>
-          <li><a class="nav-right" href="cv.html"> Curriculum Vitae</a></li>
-          <li><a class="nav-right" href="contact.html">Me contacter</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Mes projets</a></li>
+          <li><a href="cv.html"> Curriculum Vitae</a></li>
+          <li><a href="contact.html">Me contacter</a></li>
           <li><button id="DarkModeToggle">Mode sombre</button></li>
         </ul>
       </div>
     </nav>
+    <div class="cv-container">
+      <div class="left-column">
+        <img class="portait" src="images/profile.jpg" />
+        <div class="section">
+          <h2 class="h2-cv">À PROPOS</h2>
+          <p>
+            J'ai découvert le développement web il y a quelques mois et j'ai
+            immédiatement accroché. Je peux passer des heures plongé dans mon
+            code sans voir le temps passer. J'ai donc décidé de me lancer dans
+            une formation de développeur web front-end à l'IFAPME de Tournai.
+          </p>
+          <p>
+            De nature débrouillard et indépendant dans mon travail, j’aime
+            apprendre de nouvelles technologies, passer du temps à résoudre des
+            problèmes et travailler en équipe.
+          </p>
+        </div>
+        <div class="section">
+          <h2 class="h2-cv">COMPÉTENCES</h2>
+          <ul class="skills">
+            <li>
+              <i class="icon fas fa-check-circle text-darkblue"></i>
+              <strong>Débutant HTML5 &#124; CSS3</strong>
+            </li>
+            <li>
+              <i class="icon fas fa-check-circle text-darkblue"></i>
+              <strong>Débutant Javascript</strong>
+            </li>
+            <li>
+              <i class="icon fas fa-check-circle text-darkblue"></i> Git &#124;
+              Github
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2 class="h2-cv">Langues</h2>
+          <p>
+            Français, langue maternelle
+            <br />
+            Anglais, compétence Débutante
+          </p>
+        </div>
+        <div class="section">
+          <h2 class="h2-cv">Centres d'intérêt</h2>
+          <p>
+            Jeux vidéo
+            <br />
+            Musique
+            <br />
+            Sport
+            <br />
+            Informatique en général
+            <br />
+            Cuisine
+          </p>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="header">
+          <h1>Rémi <span class="text-blue">Delgutte</span></h1>
+          <p>Apprenant Front-end Developer</p>
+        </div>
+        <div class="content">
+          <div class="section">
+            <h2 class="h2-cv">
+              Expériences <br /><span class="text-blue">professionelles</span>
+            </h2>
+            <p>
+              <strong
+                >2011 <i class="fas fa-long-arrow-alt-right"></i> 2012</strong
+              >
+              <br />
+              Apprenti mécanicien automobile <em>MK Centre pneus SPRL</em>
+            </p>
+            <ul class="experience-list">
+              <li>Changement,équilibrage et réparation des pneumatique</li>
+              <li>Entretien des véhicules</li>
+              <li>Changement des différents filtres</li>
+              <li>Responsive design</li>
+              <li>Géométrie</li>
+              <li>Réparation/remplacement des petites mécanique</li>
+            </ul>
+          </div>
+          <div class="section">
+            <p>
+              <strong
+                >2015 <i class="fas fa-long-arrow-alt-right"></i> 2015</strong
+              >
+              <br />
+              Intérimaire Ouvrier de production <em>Desobry</em>
+            </p>
+            <ul class="experience-list">
+              <li>Approvisionement sur ligne de production</li>
+              <li>Préparation des commandes</li>
+              <li>Emballage des produits</li>
+              <li>Nettoyage des machines</li>
+            </ul>
+          </div>
+          <div class="section">
+            <p>
+              <strong
+                >2017 <i class="fas fa-long-arrow-alt-right"></i> 2018</strong
+              >
+              <br />
+              Apprenti Boucher/charcutier <em>Hempte Gilmet</em>
+            </p>
+            <ul class="experience-list">
+              <li>Confection des divers préparation pour le comptoir</li>
+              <li>Désossage et portionnage des différentes viandes</li>
+            </ul>
+          </div>
+          <div class="section">
+            <p>
+              <strong
+                >2018 <i class="fas fa-long-arrow-alt-right"></i> 2013</strong
+              >
+              <br />
+              Invalidité <em>Mutuelle</em>
+            </p>
+            <ul class="experience-list">
+              <li>
+                Subit une opération de l'estomac suite a des soucis de santé
+              </li>
+            </ul>
+          </div>
+          <div class="section">
+            <h2 class="h2-cv">
+              Études <br /><span class="text-blue">& formations</span>
+            </h2>
+            <p>
+              <strong
+                >2011 <i class="fas fa-long-arrow-alt-right"></i> 2013</strong
+              >
+              <br />
+              <em
+                >4<sup>ème</sup> secondaire en alternance CEFA Ath Mécanique
+                automobile</em
+              >
+            </p>
+            <p>
+              <strong
+                >2023 <i class="fas fa-long-arrow-alt-right"></i> 2025</strong
+              >
+              <br />
+              <em> IFAPME Tournai Développeur web front-end</em>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <h3>Rémi Delgutte</h3>
+      <p>&COPY; Remi Delgutte 2023</p>
+    </footer>
     <script src="script/script.js"></script>
   </body>
 </html>

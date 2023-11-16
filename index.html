@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link name="stylesheet" rel="stylesheet" href="/css/style.css" />
     <title>Portfolio Delgutte Rémi</title>
+    <link name="stylesheet" rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <script>
+      if (localStorage.getItem("darkMode") === "enabled")
+        document.body.classList.add("darkMode");
+    </script>
     <nav class="nav-global">
       <div class="profile">
         <img src="images/profile.jpg" alt="photo de profile" />
@@ -14,10 +18,10 @@
       </div>
       <div>
         <ul>
-          <li class="item"><a href="index.html">Accueil</a></li>
-          <li class="item"><a href="projets.html">Mes projets</a></li>
-          <li class="item"><a href="cv.html"> Curriculum Vitae</a></li>
-          <li class="item"><a href="contact.html">Me contacter</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Mes projets</a></li>
+          <li><a href="cv.html"> Curriculum Vitae</a></li>
+          <li><a href="contact.html">Me contacter</a></li>
           <li><button id="DarkModeToggle">Mode sombre</button></li>
         </ul>
       </div>
@@ -38,44 +42,12 @@
         <h2>Mes projets</h2>
         <div class="projets">
           <div class="projet">
-            <h4>Projet 1</h4>
+            <h4>Mon Portfolio</h4>
             <p class="description">
-              Voici la description de mon premier projet en tant que développeur
-              web front/end
+              Création d'un Portfolio afin de regroupé mes divers projets, mon
+              CV et les différents moyens de me contacter.
             </p>
-            <p class="dates">Dates 2023 - 2024</p>
-          </div>
-          <div class="projet">
-            <h4>Projet 2</h4>
-            <p class="description">
-              Voici la description de mon deuxieme projet en tant que
-              développeur web front/end
-            </p>
-            <p class="dates">Dates 2023 - 2024</p>
-          </div>
-          <div class="projet">
-            <h4>Projet 3</h4>
-            <p class="description">
-              Voici la description de mon troisieme projet en tant que
-              développeur web front/end
-            </p>
-            <p class="dates">Dates 2023 - 2024</p>
-          </div>
-          <div class="projet">
-            <h4>Projet 4</h4>
-            <p class="description">
-              Voici la description de mon quatrieme projet en tant que
-              développeur web front/end
-            </p>
-            <p class="dates">Dates 2023 - 2024</p>
-          </div>
-          <div class="projet">
-            <h4>Projet 5</h4>
-            <p class="description">
-              Voici la description de mon cinquieme projet en tant que
-              développeur web front/end
-            </p>
-            <p class="dates">Dates 2023 - 2024</p>
+            <p class="dates">Dates 2023</p>
           </div>
         </div>
       </section>

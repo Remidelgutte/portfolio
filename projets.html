@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link name="stylesheet" rel="stylesheet" href="/css/style.css" />
     <title>Portfolio Delgutte Rémi</title>
+    <link name="stylesheet" rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <script>
+      if (localStorage.getItem("darkMode") === "enabled")
+        document.body.classList.add("darkMode");
+    </script>
     <nav class="nav-global">
       <div class="profile">
         <img src="images/profile.jpg" alt="photo de profile" />
@@ -14,10 +18,10 @@
       </div>
       <div>
         <ul>
-          <li><a class="nav-right" href="index.html">Accueil</a></li>
-          <li><a class="nav-right" href="projets.html">Mes projets</a></li>
-          <li><a class="nav-right" href="cv.html"> Curriculum Vitae</a></li>
-          <li><a class="nav-right" href="contact.html">Me contacter</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Mes projets</a></li>
+          <li><a href="cv.html"> Curriculum Vitae</a></li>
+          <li><a href="contact.html">Me contacter</a></li>
           <li><button id="DarkModeToggle">Mode sombre</button></li>
         </ul>
       </div>
