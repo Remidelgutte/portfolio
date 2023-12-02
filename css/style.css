@@ -57,6 +57,7 @@ button {
   border-radius: 50%;
   max-width: 270px;
   max-height: 280px;
+  z-index: 1;
 }
 .profile h1 {
   margin-left: 10px;
