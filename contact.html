@@ -7,6 +7,10 @@
       name="description"
       content="liste de tout les moyens de contacter delgutte remi développeur web front-end"
     />
+    <script
+      src="https://kit.fontawesome.com/cb56380532.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Portfolio Delgutte Rémi</title>
     <link name="stylesheet" rel="stylesheet" href="/css/style.css" />
   </head>
@@ -15,18 +19,21 @@
       const theme = localStorage.getItem("darkMode") || "light";
       document.documentElement.dataset.theme = theme;
     </script>
+    <div id="icons"></div>
+    <button id="DarkModeToggle">
+      <i id="img-darkmode" class=""></i>
+    </button>
     <nav class="nav-global">
       <div class="profile">
         <img src="images/profile.jpg" alt="photo de profile" />
         <h1>Delgutte Rémi</h1>
       </div>
-      <div>
-        <ul>
+      <div class="nav-bar">
+        <ul class="nav">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="projets.html">Mes projets</a></li>
           <li><a href="cv.html"> Curriculum Vitae</a></li>
           <li><a href="contact.html">Me contacter</a></li>
-          <li><button id="DarkModeToggle">Mode sombre</button></li>
         </ul>
       </div>
     </nav>
