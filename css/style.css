@@ -276,9 +276,6 @@ footer {
     z-index: 1;
     cursor: pointer;
   }
-  #icons:before {
-    content: "\2630";
-  }
   nav ul {
     display: none;
     flex-direction: column;
