@@ -273,6 +273,7 @@ h2 .h2-cv {
   height: auto;
   justify-content: center;
   margin-bottom: 40px;
+  margin-top: 60px;
 }
 footer {
   margin-left: 1%;
@@ -282,14 +283,9 @@ footer {
 }
 .contact-content {
   max-width: 100%;
-  margin: 75px;
-  padding-left: 200px;
-  padding-right: 200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 150px;
-  justify-content: center;
-  box-sizing: border-box;
+  justify-items: center;
 }
 .contact-content div {
   display: flex;
@@ -314,6 +310,7 @@ footer {
 .contact-column {
   border: var(--text-color) 2px solid;
   border-radius: 10%;
+  width: 260px;
 }
 .features-content h4 {
   font-size: 18px;
@@ -411,7 +408,7 @@ footer {
     max-width: 95%;
   }
   .contact-content {
-    grid-gap: 0;
+    grid-gap: 10px;
     padding: 0 0;
     max-width: 100%;
     grid-template-columns: repeat(1, 1fr);
